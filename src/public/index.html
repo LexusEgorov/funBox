@@ -4,9 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <title>Нямушка</title>
   </head>
   <body>
-    <h1>Hello!</h1>
+    <div class="wrapper">
+      <h1 class="visually-hidden">Корм для котов Нямушка</h1>
+      <section class="main-container">
+        <h2>Ты сегодня покормил кота?</h2>
+        <ul class="main-container__cards-list cards-list"> 
+          <li data-type="GOOSE_LIVER" class="cards-list__card">
+            <input type="checkbox" id="gooseLiver" class="card-checkbox visually-hidden">
+            <label class="card disabled" for="gooseLiver">
+              <article class="card-content">
+                <h3>Нямушка</h3>
+                <h4>с фуа-гра</h4>
+                <p class="description">Сказочное заморское яство</p>
+                <div class="additions">
+                  <p><span class="count">10</span> порций</p>
+                  <p>мышь в подарок</p>
+                </div>
+              </article>
+              <div class="circle">
+                <p class="weight-count">0,5</p>
+                <p class="kg">кг</p>
+              </div>
+            </label>
+            <div class="mask-disabled"></div>
+            <p class="product-composition">Чего сидишь? Порадуй котэ, <a href="#" class="buy">купи.</a></p>
+          </li>
+          <li data-type="FISH" class="cards-list__card">
+            <input type="checkbox" id="fish" class="card-checkbox visually-hidden">
+            <label class="card enabled" for="fish">
+              <article class="card-content">
+                <h3>Нямушка</h3>
+                <h4>с рыбой</h4>
+                <p class="description">Сказочное заморское яство</p>
+                <div class="additions">
+                  <p><span class="count">40</span> порций</p>
+                  <p><span class="count">2</span> мыши в подарок</p>
+                </div>
+              </article>
+              <div class="circle">
+                <p class="weight-count">2</p>
+                <p class="kg">кг</p>
+              </div>
+            </label>
+            <div class="mask-disabled"></div>
+            <p class="product-composition">Чего сидишь? Порадуй котэ, <a href="#" class="buy">купи.</a></p>
+          </li>
+          <li data-type="CHICKEN" class="cards-list__card">
+            <input type="checkbox" id="chicken" class="card-checkbox visually-hidden">
+            <label class="card enabled" for="chicken">
+              <article class="card-content">
+                <h3>Нямушка</h3>
+                <h4>с курой</h4>
+                <p class="description">Сказочное заморское яство</p>
+                <div class="additions">
+                  <p><span class="count">100</span> порций</p>
+                  <p><span class="count">5</span> мышей в подарок</p>
+                  <p>заказчик доволен</p>
+                </div>
+              </article>
+              <div class="circle">
+                <p class="weight-count">5</p>
+                <p class="kg">кг</p>
+              </div>
+            </label>
+            <div class="mask-disabled"></div>
+            <p class="product-composition">Чего сидишь? Порадуй котэ, <a href="#" class="buy">купи.</a></p>
+          </li>
+        </ul>
+      </section>
+    </div>
   </body>
 </html>

@@ -12,7 +12,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin(
       {
-        template: "./src/public/index.html"
+        template: "./src/public/index.html",
       }
     ),
     new CleanWebpackPlugin()
@@ -20,8 +20,8 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(css|s[ac]ss)$/,
-        use: ["style-loader", "css-loader", "sass-loader"]
+        test: /\.(css)$/,
+        use: ["style-loader", "css-loader",]
       }
     ]
   },
